@@ -19,6 +19,7 @@
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
+    "gh-pages": "^6.1.1",
     "openai": "^4.29.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
