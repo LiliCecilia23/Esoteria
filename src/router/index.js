@@ -5,7 +5,7 @@ import Tarot from '../views/Tarot.vue'
 import BuyDeck from '../views/BuyDeck.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/Esoteria'),
   routes: [
     { // Home Page / Daily Pull
       path: '/',
