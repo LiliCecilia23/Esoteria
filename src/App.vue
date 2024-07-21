@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import MoonIcon from './components/MoonIcon.vue';
 import NavBar from './components/NavBar.vue';
 import Footer from './components/Footer.vue';
-import Card from './components/Card.vue';
+import Card from './components/Tarot-Card.vue';
 import OpenAI from "openai";
 import axios from "axios";
 import { state } from "./state.js"
@@ -15,7 +15,7 @@ import { state } from "./state.js"
   <div class="main-content">
     <RouterView />
   </div>
-  <Card style="display: none;" />
+  <Card testy="please just deploy" style="display: none;" />
   <Footer />
 </template>
 

@@ -1,7 +1,7 @@
 <script setup>
 import arcana from '../data/arcana.json';
 import MoonPhases from '../data/moonPhases.json';
-import card from '../components/Card.vue';
+import Card from '@/components/Tarot-Card.vue';
 import { state } from '../state.js';
 </script>
 
@@ -12,7 +12,7 @@ import { state } from '../state.js';
     </div>
     <div class="row mt-3">
       <div v-for="(card, index) in cards" style="display: flex; flex-direction: row;"> 
-        <card :deck="decks[state.chosenDeck].folder" :front="card.images[decks[state.chosenDeck].folder]"></card>
+        <Card :deck="decks[state.chosenDeck].folder" :front="card.images[decks[state.chosenDeck].folder]"></Card>
         <div style="display: flex; flex-direction: column; margin-left: 30px;">
           <h6 style="color: #5A4252;">Card Meaning:</h6>
           <p style="font-family: 'Ojuju', cursive;">

@@ -1,6 +1,6 @@
 <script setup>
 import arcana from '../data/arcana.json';
-import card from '../components/Card.vue';
+import Card from '@/components/Tarot-Card.vue';
 import { state } from '../state.js';
 </script>
 <template>
@@ -12,7 +12,7 @@ import { state } from '../state.js';
     <div class="row">
       <div v-for="(card, index) in cards" class="col-4" style="display: flex; flex-direction: column; align-items: center;"> 
         <h6 style="color: #5A4252">{{ spreadChoices[0].meanings[index] }}</h6>
-        <card :deck="decks[state.chosenDeck].folder" :front="card.images[decks[state.chosenDeck].folder]"></card>
+        <Card :deck="decks[state.chosenDeck].folder" :front="card.images[decks[state.chosenDeck].folder]"></Card>
         <h6 class="pt-2" style="color: #5A4252">{{ card.card }}</h6>
         <p style="font-family: 'Ojuju', cursive; text-align: center;">
           {{ card.brief }} {{ card.advice }}
